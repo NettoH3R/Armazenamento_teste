@@ -4,5 +4,5 @@ tasks:
   - init: mysql -u root < ./assets/sql/db.sql ;
   - name: Increase PHP upload limit
     init: |
-      echo "upload_max_filesize=10M" >> /etc/php/8.2.4/cli/conf.d/99-gitpod.ini
+      echo "upload_max_filesize=1000M" >> /etc/php/8.2.4/cli/conf.d/99-gitpod.ini
       echo "post_max_size=1000M" >> /etc/php/8.2.4/cli/conf.d/99-gitpod.ini
