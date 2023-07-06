@@ -2,7 +2,7 @@
 
 require_once './vendor/autoload.php';
 
-use src\MySQLConnection\MySQLConnection;
+use Src\MySQLConnection\MySQLConnection;
 use PDO;
 
 $bd = new MySQLConnection;
@@ -14,17 +14,18 @@ $medias = $comando->fetchAll(PDO::FETCH_ASSOC);
 include ('./includes/header.php')
 ?>
 
-<table>
+<table border="1px">
     <tr>
         <td>ID</td>
         <td>NOME</td>
-        <td>MÚsica</td>
+        <td>MÚSICA</td>
+        <td><a href="./insert.php"><button>+</button></a></td>
     </tr>
 
-    <?php foreach($generos as $g): ?>
+    <?php foreach($medias as $m): ?>
         <tr>
-            <td><?= $g['id'] ?></td>
-            <td><?= $g['nome'] ?></td>
+            <td><?= $m['id'] ?></td>
+            <td><?= $m['nome'] ?></td>
         </tr>
     <?php endforeach ?>
 </table>
