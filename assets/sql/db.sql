@@ -1,0 +1,8 @@
+CREATE DATABASE dados
+USE dados
+
+CREATE TABLE media(
+    id AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    arquivo VARCHAR(100);
+)
