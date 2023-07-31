@@ -26,6 +26,7 @@ include ('./includes/header.php')
         <tr>
             <td><?= $m['id'] ?></td>
             <td><?= $m['nome'] ?></td>
+            <td><audio src="<?= $m['arquivo'] ?>" controls></td>
         </tr>
     <?php endforeach ?>
 </table>
