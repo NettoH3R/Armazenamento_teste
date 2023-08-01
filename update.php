@@ -23,8 +23,6 @@ include('./includes/header.php');
 <form action="update.php" method="post">
     <input type="hidden" value="<?= $musica['id'] ?>">
     <input type="text"  value="<?= $musica['nome']?>">
-    <input type="file" value="<?= $musica['arquivo']?>">
-    <?= var_dump($musica['arquivo'])?>
 <button type="submit">Salvar</button>
 </form>
 
