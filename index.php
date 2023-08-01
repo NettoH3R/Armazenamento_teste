@@ -27,6 +27,9 @@ include ('./includes/header.php')
             <td><?= $m['id'] ?></td>
             <td><?= $m['nome'] ?></td>
             <td><audio src="<?= $m['arquivo'] ?>" controls></td>
+            <td>
+                <a href="update.php?id=<?= $m['id']?>"><button type="button">Editar</button></a>
+            </td>
         </tr>
     <?php endforeach ?>
 </table>
