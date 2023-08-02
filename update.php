@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     
     if (rename($pathAntigo,$pathNovo)){
 
-        $comando = $bd->prepare('UPDATE media SET caminho = :caminho WHERE id = :id');
+        $comando = $bd->prepare('UPDATE media SET arquivo = :caminho WHERE id = :id');
         $comando->execute([':caminho' => $pathNovo, ':id' => $_POST['id']]);
 
         header('Location:/index.php');
