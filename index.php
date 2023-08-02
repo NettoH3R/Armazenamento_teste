@@ -1,5 +1,7 @@
 <?php 
 
+$title = 'Inicio';
+
 require_once './vendor/autoload.php';
 
 use Src\MySQLConnection\MySQLConnection;

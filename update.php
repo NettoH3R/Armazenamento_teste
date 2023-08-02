@@ -1,4 +1,7 @@
 <?php
+
+$title = 'Atualizar Música';
+
 require_once './vendor/autoload.php';
 
 use Src\MySQLConnection\MySQLConnection;
@@ -19,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     $musica = $comando->fetch(PDO::FETCH_ASSOC);
 
-    var_dump($nome);
     //muda para o novo nome
     $comando = $bd->prepare('UPDATE media SET nome = :nome WHERE id = :id');
     $comando->execute([':nome' => $_POST['nome'], ':id' => $_POST['id']]);

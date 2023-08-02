@@ -1,4 +1,7 @@
 <?php
+
+$title = 'Adicionar Música';
+
 if ($_SERVER['REQUEST_METHOD'] == 'GET') :
 
     include('./includes/header.php'); ?>
