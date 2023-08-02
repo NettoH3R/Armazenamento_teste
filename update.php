@@ -56,6 +56,7 @@ include('./includes/header.php');
     <input type="hidden" value="<?= $musica['id'] ?>" name="id">
     <input type="text" value="<?= $musica['nome'] ?>" name="nome">
     <button type="submit">Salvar</button>
+    <a href="index.php" ><button type="button">Voltar</button></a>
 </form>
 
 <?php include('./includes/footer.php'); ?>

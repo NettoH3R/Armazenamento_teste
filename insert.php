@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') :
         <input type="text" name="nome">
         <br>
         <input type="submit" value="Enviar">
+        <a href="index.php" ><button type="button">Voltar</button></a>
     </form>
 
 <?php

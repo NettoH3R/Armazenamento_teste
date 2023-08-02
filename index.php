@@ -31,6 +31,7 @@ include ('./includes/header.php')
             <td><audio src="<?= $m['arquivo'] ?>" controls></td>
             <td>
                 <a href="update.php?id=<?= $m['id']?>"><button type="button">Editar</button></a>
+                <a href="delete.php?id=<?= $m['id']?>"><button type="button">Excluir</button></a>
             </td>
         </tr>
     <?php endforeach ?>
