@@ -74,7 +74,12 @@ if (isset($_FILES['arquivo'])) {
 
             header('Location:/index.php');
         } else {
-            echo "<p>Falha ao Enviar o arquivo</p>";
+            echo "<p>Falha ao Enviar o arquivo</p><br>";
+            if($_POST['nome'] == null){
+                echo "<p>Por favor Digite o nome do arquivo<p>";
+                echo  '<a href="insert.php" ><button type="button">Voltar</button></a>';
+            }
+
         }
     } else {
         // O arquivo não é um MP3 válido, exiba uma mensagem de erro
